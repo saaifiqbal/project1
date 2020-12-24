@@ -1,0 +1,368 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Titillium Web', sans-serif;
+	text-rendering: optimizeLegibility;
+	line-height: 1.3;
+}
+/**** Reusebale Component ***/
+h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #014073;
+}
+h2{
+    font-size: 3rem;
+    color: #014073;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+h3{
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 600;
+}
+h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+}
+p{
+    font-size: 1.5rem;
+    color: #000;
+}
+button{
+    font-size: 1.2rem !important;
+    border-radius: 1.5rem/50% !important;
+    color: #fff;
+}
+/* TOP Section */
+.top-section {
+    overflow: hidden;
+    background: #000000;
+    color: #fff;
+    /* padding: .5rem; */
+    font-size: 1.2rem;
+}
+.top-section .row {
+    margin-top: .5rem;
+}
+.top-section .row .col-sm-6 .row .top {
+    text-align: left;
+}
+.top-section .row .col-sm-6 .row .col-sm-8 {
+    text-align: left;
+}
+
+.top-section .row .col-sm-6 {
+    text-align: right;
+}
+.top-section p{
+    color: #fff;
+}
+.top-section  .col-sm-6 li {
+    list-style: none;
+    margin-top: 1rem;
+    color: #fff;
+}
+.top-section  .col-sm-6 li a{
+    margin: 0 .5rem;
+    color: #fff;
+}
+
+/* Navbar Section */
+nav.navbar.navbar-expand-lg.navbar-light {
+    background: #014073;
+    color: #fff !important;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+nav.navbar.navbar-expand-lg.navbar-light a{
+    color: #fff !important;
+}
+li.nav-item {
+    padding: .5rem;
+}
+a.nav-link {
+    padding: 0 1rem;
+}
+.nav-section .container .navbar-nav .active a:link,
+.nav-section .container .navbar-nav .active a:visited{
+    color:#ff9d34 !important;
+    transition: .5s;
+}
+
+.dropdown-menu.show {
+    background: #000;
+}
+/* BG section */
+.bg-section{
+    background: linear-gradient(rgba(226, 229, 231, 0.2),rgba(226, 229, 231, 0.2)),url(img/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+    overflow: hidden;
+    text-align: left;
+}
+.bg-section .col-sm-12 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+.bg-section .col-sm-12 h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #014073;
+}
+.bg-section .col-sm-12 p {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+button.btn.btn-warning {
+    border-radius: 1.5rem/50%;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .2rem 2rem;
+    text-transform: capitalize;
+}
+button.btn.btn-warning:hover{
+    transition: .5s;
+    color: #000;
+    background: none;
+}
+
+/*** Services Section ***/
+section.services-section {
+    text-align: center;
+    overflow: hidden;
+    background: #fff;
+}
+.services-section .container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.services-section .container h3 {
+    margin-bottom: 1rem;
+}
+
+.services-section .container p {
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.services-section img.card-img-top {
+    height: 5rem;
+    width: 20%;
+    margin: 4rem 40% 2rem;
+}
+.services-section h5.card-title {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.services-section p.card-text {
+    line-height: 2.5rem;
+    font-size: 1.4rem !important;
+}
+.services-section a.btn.btn-primary {
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 1.5rem/50%;
+    /* margin: 0 1rem; */
+    padding: .5rem 1.5rem;
+    margin-bottom: 2rem;
+}
+.services-section a.btn.btn-primary:hover 
+{
+    background: none;
+    transition: .5s;
+    color: #000;
+}
+
+/*** Solutions Section ***/
+section.solutions-section {
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.solutions-section .container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+.solutions-section h2 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color: #014073;
+    font-weight: revert;
+}
+.solutions-section p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+/*** Consulting Section ***/
+.consult-section{
+    overflow: hidden;
+    background: #fff;
+}
+.consult-section .container{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.consult-section .container .col-sm-6{
+    height:36rem;
+}
+.consult-section .container .left-side .favicon-img{
+    height: 5rem;
+    width: 10%;
+    margin-bottom: 5rem;
+}
+.consult-section .container .right-side img{
+    text-align: right !important;
+    height: 100%;
+    width: 100%;
+}
+.consult-section h2 {
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+.consult-section p {
+    margin-bottom: 2rem;
+}
+/**** Business Section ****/
+.business-section{
+    overflow: hidden;
+    background: #014073;
+    color: #fff;
+}
+.business-section .container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.business-section .container p{
+    color:#fff;
+    margin-top: 1rem;
+}
+.business-section .container .col-sm-4{
+    text-align: right;
+}
+.business-section .container button.btn.btn-outline-secondary{
+    margin-top: 2rem;
+    color: #fff;
+    padding: .5rem 2rem;
+}
+.business-section .container button.btn.btn-outline-secondary:hover{
+    color: #000;
+    background: #fff;
+    transition: .5s;
+}
+
+/*** Leader Section ****/
+.leader-section{
+    overflow: hidden;
+    background: #fff;
+}
+.leader-section .container{
+    margin-top: 4rem;
+}
+.leader-section .col-sm-6 h3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 5rem;
+    font-weight: 700;
+    color: #014073;
+}
+.leader-section .col-sm-6 p{
+    line-height: 2.5rem;
+}
+.leader-section .image{
+    text-align: right;
+}
+
+/*** Client Section ***/
+.client-section{
+    overflow: hidden;
+    background: linear-gradient(rgba(215,70,128,.7),rgba(215,70,128,.7)),url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.client-section .container{
+    text-align: center;
+    margin: 10rem auto;
+}
+.client-section h3 {
+    color: #014073;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.client-section img{
+    width: 10rem;
+    height: 10rem;
+}
+/**** Contact Section ****/
+.contact-section{
+    overflow: hidden;
+    background: linear-gradient(rgba(1,64,115,.9),rgba(1,64,115,.9)),url(img/contact-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 20%;
+	background-attachment: fixed;
+    color: #fff;
+}
+.contact-section .container{
+    margin:6rem auto;
+}
+.contact-section h5{
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+.contact-section p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    line-height: 2.5rem;
+}
+.contact-section li{
+    list-style: none;
+}
+.contact-section a{
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.contact-section li a{
+    display: block;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+.contact-section  a:hover{
+    color: red;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact-section .footer{
+    margin-top: 4rem;
+}
+.contact-section .footer p{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
